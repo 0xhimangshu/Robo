@@ -1,0 +1,396 @@
+2023-11-09T16:58:45.246+05:30  INFO 13252 --- [main] lavalink.server.Launcher                 : Starting Launcher v4.0.0-beta.5 using Java 17.0.9 with PID 13252 (D:\himangshu\Projects\Robo\lava\lava4.jar started by Himangshu Saikia in D:\himangshu\Projects\Robo\lava)
+2023-11-09T16:58:45.253+05:30  INFO 13252 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2023-11-09T16:58:47.865+05:30  INFO 13252 --- [main] lavalink.server.Launcher                 : Started Launcher in 4.269 seconds (process running for 5.461)
+2023-11-09T16:58:47.876+05:30  INFO 13252 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/lavalink-devs/Lavalink/issues/295
+2023-11-09T16:58:48.011+05:30  INFO 13252 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        4.0.0-beta.5
+	Build time:     05.11.2023 00:41:08 UTC
+	Branch          HEAD
+	Commit:         4271d55
+	Commit time:    05.11.2023 00:37:40 UTC
+	JVM:            17.0.9
+	Lavaplayer      2.0.3
+
+2023-11-09T16:58:48.036+05:30  INFO 13252 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2023-11-09T16:58:49.411+05:30  WARN 13252 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-11-09T16:58:49.455+05:30  INFO 13252 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-11-09T16:58:49.461+05:30  INFO 13252 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1343 ms
+2023-11-09T16:58:49.719+05:30  INFO 13252 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2023-11-09T16:58:51.277+05:30  INFO 13252 --- [main] l.server.config.KoeConfiguration         : OS: WINDOWS, Arch: X86_64
+2023-11-09T16:58:51.284+05:30  INFO 13252 --- [main] l.server.config.KoeConfiguration         : Enabling JDA-NAS
+2023-11-09T16:58:51.290+05:30  INFO 13252 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2023-11-09T16:58:51.300+05:30  INFO 13252 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2023-11-09T16:58:51.560+05:30  WARN 13252 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2023-11-09T16:58:52.084+05:30  INFO 13252 --- [main] io.undertow                              : starting server: Undertow - 2.3.6.Final
+2023-11-09T16:58:52.105+05:30  INFO 13252 --- [main] org.xnio                                 : XNIO version 3.8.8.Final
+2023-11-09T16:58:52.121+05:30  INFO 13252 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2023-11-09T16:58:52.350+05:30  INFO 13252 --- [main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2023-11-09T16:58:52.494+05:30  INFO 13252 --- [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 2333 (http)
+2023-11-09T16:58:52.511+05:30  INFO 13252 --- [main] lavalink.server.Launcher                 : Started Launcher in 4.628 seconds (process running for 10.108)
+2023-11-09T16:58:52.519+05:30  INFO 13252 --- [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2023-11-09T16:59:33.051+05:30  INFO 13252 --- [SpringApplicationShutdownHook] io.undertow                              : stopping server: Undertow - 2.3.6.Final
+2023-11-09T16:59:33.059+05:30  INFO 13252 --- [SpringApplicationShutdownHook] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2023-11-09T16:59:37.996+05:30  INFO 15348 --- [main] lavalink.server.Launcher                 : Starting Launcher v4.0.0-beta.5 using Java 17.0.9 with PID 15348 (D:\himangshu\Projects\Robo\lava\lava4.jar started by Himangshu Saikia in D:\himangshu\Projects\Robo\lava)
+2023-11-09T16:59:38.025+05:30  INFO 15348 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2023-11-09T16:59:40.089+05:30  INFO 15348 --- [main] lavalink.server.Launcher                 : Started Launcher in 3.036 seconds (process running for 4.379)
+2023-11-09T16:59:40.094+05:30  INFO 15348 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/lavalink-devs/Lavalink/issues/295
+2023-11-09T16:59:40.214+05:30  INFO 15348 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        4.0.0-beta.5
+	Build time:     05.11.2023 00:41:08 UTC
+	Branch          HEAD
+	Commit:         4271d55
+	Commit time:    05.11.2023 00:37:40 UTC
+	JVM:            17.0.9
+	Lavaplayer      2.0.3
+
+2023-11-09T16:59:40.235+05:30  INFO 15348 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2023-11-09T16:59:42.070+05:30  WARN 15348 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-11-09T16:59:42.124+05:30  INFO 15348 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-11-09T16:59:42.136+05:30  INFO 15348 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1888 ms
+2023-11-09T16:59:42.431+05:30  INFO 15348 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2023-11-09T16:59:44.181+05:30  INFO 15348 --- [main] l.server.config.KoeConfiguration         : OS: WINDOWS, Arch: X86_64
+2023-11-09T16:59:44.186+05:30  INFO 15348 --- [main] l.server.config.KoeConfiguration         : Enabling JDA-NAS
+2023-11-09T16:59:44.193+05:30  INFO 15348 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2023-11-09T16:59:44.206+05:30  INFO 15348 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2023-11-09T16:59:44.390+05:30  WARN 15348 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2023-11-09T16:59:45.461+05:30  INFO 15348 --- [main] io.undertow                              : starting server: Undertow - 2.3.6.Final
+2023-11-09T16:59:45.660+05:30  INFO 15348 --- [main] org.xnio                                 : XNIO version 3.8.8.Final
+2023-11-09T16:59:45.679+05:30  INFO 15348 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2023-11-09T16:59:46.045+05:30  INFO 15348 --- [main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2023-11-09T16:59:46.170+05:30  INFO 15348 --- [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 2333 (http)
+2023-11-09T16:59:46.193+05:30  INFO 15348 --- [main] lavalink.server.Launcher                 : Started Launcher in 6.087 seconds (process running for 10.483)
+2023-11-09T16:59:46.211+05:30  INFO 15348 --- [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2023-11-09T17:00:35.031+05:30  INFO 15348 --- [SpringApplicationShutdownHook] io.undertow                              : stopping server: Undertow - 2.3.6.Final
+2023-11-09T17:00:35.039+05:30  INFO 15348 --- [SpringApplicationShutdownHook] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2023-11-09T17:00:48.577+05:30  INFO 10676 --- [main] lavalink.server.Launcher                 : Starting Launcher v4.0.0-beta.5 using Java 17.0.9 with PID 10676 (D:\himangshu\Projects\Robo\lava\lava4.jar started by Himangshu Saikia in D:\himangshu\Projects\Robo\lava)
+2023-11-09T17:00:48.584+05:30  INFO 10676 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2023-11-09T17:00:51.028+05:30  INFO 10676 --- [main] lavalink.server.Launcher                 : Started Launcher in 3.501 seconds (process running for 4.962)
+2023-11-09T17:00:51.035+05:30  INFO 10676 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/lavalink-devs/Lavalink/issues/295
+2023-11-09T17:00:51.171+05:30  INFO 10676 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        4.0.0-beta.5
+	Build time:     05.11.2023 00:41:08 UTC
+	Branch          HEAD
+	Commit:         4271d55
+	Commit time:    05.11.2023 00:37:40 UTC
+	JVM:            17.0.9
+	Lavaplayer      2.0.3
+
+2023-11-09T17:00:51.195+05:30  INFO 10676 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2023-11-09T17:00:52.783+05:30  WARN 10676 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-11-09T17:00:52.851+05:30  INFO 10676 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-11-09T17:00:52.871+05:30  INFO 10676 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1633 ms
+2023-11-09T17:00:53.243+05:30  INFO 10676 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2023-11-09T17:00:55.127+05:30  INFO 10676 --- [main] l.server.config.KoeConfiguration         : OS: WINDOWS, Arch: X86_64
+2023-11-09T17:00:55.139+05:30  INFO 10676 --- [main] l.server.config.KoeConfiguration         : Enabling JDA-NAS
+2023-11-09T17:00:55.146+05:30  INFO 10676 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2023-11-09T17:00:55.167+05:30  INFO 10676 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2023-11-09T17:00:55.384+05:30  WARN 10676 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2023-11-09T17:00:55.953+05:30  INFO 10676 --- [main] io.undertow                              : starting server: Undertow - 2.3.6.Final
+2023-11-09T17:00:55.969+05:30  INFO 10676 --- [main] org.xnio                                 : XNIO version 3.8.8.Final
+2023-11-09T17:00:56.019+05:30  INFO 10676 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2023-11-09T17:00:56.312+05:30  INFO 10676 --- [main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2023-11-09T17:00:56.404+05:30  INFO 10676 --- [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 2333 (http)
+2023-11-09T17:00:56.431+05:30  INFO 10676 --- [main] lavalink.server.Launcher                 : Started Launcher in 5.383 seconds (process running for 10.365)
+2023-11-09T17:00:56.437+05:30  INFO 10676 --- [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2023-11-09T17:00:57.290+05:30  INFO 10676 --- [XNIO-1 task-2] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-09T17:00:57.291+05:30  INFO 10676 --- [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-09T17:00:57.293+05:30  INFO 10676 --- [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-09T17:00:57.310+05:30  WARN 10676 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:00:57.331+05:30  INFO 10676 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:00:58.929+05:30  WARN 10676 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:00:58.931+05:30  INFO 10676 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:01:02.698+05:30  WARN 10676 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:01:02.699+05:30  INFO 10676 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:01:24.184+05:30  WARN 10676 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:01:24.185+05:30  INFO 10676 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:01:38.556+05:30  INFO 10676 --- [SpringApplicationShutdownHook] io.undertow                              : stopping server: Undertow - 2.3.6.Final
+2023-11-09T17:01:38.561+05:30  INFO 10676 --- [SpringApplicationShutdownHook] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-09T17:01:38.566+05:30  INFO 10676 --- [SpringApplicationShutdownHook] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2023-11-09T17:01:42.255+05:30  INFO 1192 --- [main] lavalink.server.Launcher                 : Starting Launcher v4.0.0-beta.5 using Java 17.0.9 with PID 1192 (D:\himangshu\Projects\Robo\lava\lava4.jar started by Himangshu Saikia in D:\himangshu\Projects\Robo\lava)
+2023-11-09T17:01:42.261+05:30  INFO 1192 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2023-11-09T17:01:44.425+05:30  INFO 1192 --- [main] lavalink.server.Launcher                 : Started Launcher in 3.198 seconds (process running for 4.377)
+2023-11-09T17:01:44.432+05:30  INFO 1192 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/lavalink-devs/Lavalink/issues/295
+2023-11-09T17:01:44.625+05:30  INFO 1192 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        4.0.0-beta.5
+	Build time:     05.11.2023 00:41:08 UTC
+	Branch          HEAD
+	Commit:         4271d55
+	Commit time:    05.11.2023 00:37:40 UTC
+	JVM:            17.0.9
+	Lavaplayer      2.0.3
+
+2023-11-09T17:01:44.645+05:30  INFO 1192 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2023-11-09T17:01:46.174+05:30  WARN 1192 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-11-09T17:01:46.228+05:30  INFO 1192 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-11-09T17:01:46.281+05:30  INFO 1192 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1612 ms
+2023-11-09T17:01:46.571+05:30  INFO 1192 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2023-11-09T17:01:48.176+05:30  INFO 1192 --- [main] l.server.config.KoeConfiguration         : OS: WINDOWS, Arch: X86_64
+2023-11-09T17:01:48.190+05:30  INFO 1192 --- [main] l.server.config.KoeConfiguration         : Enabling JDA-NAS
+2023-11-09T17:01:48.201+05:30  INFO 1192 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2023-11-09T17:01:48.229+05:30  INFO 1192 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2023-11-09T17:01:48.408+05:30  WARN 1192 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2023-11-09T17:01:49.287+05:30  INFO 1192 --- [main] io.undertow                              : starting server: Undertow - 2.3.6.Final
+2023-11-09T17:01:49.362+05:30  INFO 1192 --- [main] org.xnio                                 : XNIO version 3.8.8.Final
+2023-11-09T17:01:49.419+05:30  INFO 1192 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2023-11-09T17:01:49.586+05:30  INFO 1192 --- [main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2023-11-09T17:01:49.676+05:30  INFO 1192 --- [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 2333 (http)
+2023-11-09T17:01:49.692+05:30  INFO 1192 --- [main] lavalink.server.Launcher                 : Started Launcher in 5.247 seconds (process running for 9.645)
+2023-11-09T17:01:49.699+05:30  INFO 1192 --- [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2023-11-09T17:01:54.290+05:30  INFO 1192 --- [XNIO-1 task-2] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-09T17:01:54.292+05:30  INFO 1192 --- [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-09T17:01:54.294+05:30  INFO 1192 --- [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-09T17:01:54.326+05:30  WARN 1192 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:01:54.334+05:30  INFO 1192 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:01:55.073+05:30  WARN 1192 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:01:55.074+05:30  INFO 1192 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:02:01.327+05:30  WARN 1192 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:02:01.328+05:30  INFO 1192 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:02:13.824+05:30  WARN 1192 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:02:13.825+05:30  INFO 1192 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:02:26.352+05:30  INFO 1192 --- [SpringApplicationShutdownHook] io.undertow                              : stopping server: Undertow - 2.3.6.Final
+2023-11-09T17:02:26.357+05:30  INFO 1192 --- [SpringApplicationShutdownHook] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-09T17:02:26.360+05:30  INFO 1192 --- [SpringApplicationShutdownHook] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2023-11-09T17:02:46.134+05:30  INFO 15464 --- [main] lavalink.server.Launcher                 : Starting Launcher v4.0.0-beta.5 using Java 17.0.9 with PID 15464 (D:\himangshu\Projects\Robo\lava\lava4.jar started by Himangshu Saikia in D:\himangshu\Projects\Robo\lava)
+2023-11-09T17:02:46.144+05:30  INFO 15464 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2023-11-09T17:02:48.581+05:30  INFO 15464 --- [main] lavalink.server.Launcher                 : Started Launcher in 3.792 seconds (process running for 5.725)
+2023-11-09T17:02:48.591+05:30  INFO 15464 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/lavalink-devs/Lavalink/issues/295
+2023-11-09T17:02:48.716+05:30  INFO 15464 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        4.0.0-beta.5
+	Build time:     05.11.2023 00:41:08 UTC
+	Branch          HEAD
+	Commit:         4271d55
+	Commit time:    05.11.2023 00:37:40 UTC
+	JVM:            17.0.9
+	Lavaplayer      2.0.3
+
+2023-11-09T17:02:48.731+05:30  INFO 15464 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2023-11-09T17:02:50.590+05:30  WARN 15464 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-11-09T17:02:50.680+05:30  INFO 15464 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-11-09T17:02:50.696+05:30  INFO 15464 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1947 ms
+2023-11-09T17:02:51.100+05:30  INFO 15464 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2023-11-09T17:02:53.323+05:30  INFO 15464 --- [main] l.server.config.KoeConfiguration         : OS: WINDOWS, Arch: X86_64
+2023-11-09T17:02:53.329+05:30  INFO 15464 --- [main] l.server.config.KoeConfiguration         : Enabling JDA-NAS
+2023-11-09T17:02:53.336+05:30  INFO 15464 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2023-11-09T17:02:53.352+05:30  INFO 15464 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2023-11-09T17:02:53.622+05:30  WARN 15464 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2023-11-09T17:02:54.822+05:30  INFO 15464 --- [main] io.undertow                              : starting server: Undertow - 2.3.6.Final
+2023-11-09T17:02:54.982+05:30  INFO 15464 --- [main] org.xnio                                 : XNIO version 3.8.8.Final
+2023-11-09T17:02:55.000+05:30  INFO 15464 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2023-11-09T17:02:55.266+05:30  INFO 15464 --- [main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2023-11-09T17:02:55.454+05:30  INFO 15464 --- [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-11-09T17:02:55.537+05:30  INFO 15464 --- [main] lavalink.server.Launcher                 : Started Launcher in 6.939 seconds (process running for 12.681)
+2023-11-09T17:02:55.585+05:30  INFO 15464 --- [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2023-11-09T17:03:00.145+05:30  INFO 15464 --- [XNIO-1 task-2] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-09T17:03:00.183+05:30  INFO 15464 --- [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-09T17:03:00.197+05:30  INFO 15464 --- [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-09T17:03:00.238+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:03:00.246+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:03:02.015+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:03:02.016+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:03:04.118+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:03:04.120+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:03:19.132+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:03:19.225+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:03:49.264+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:03:49.380+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:04:19.552+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:04:19.562+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:04:21.520+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:04:21.520+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:04:24.351+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:04:24.352+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:04:41.523+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:04:41.524+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:05:11.555+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:05:11.564+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:05:12.414+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:05:12.415+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:05:14.748+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:05:14.749+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:05:29.843+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:05:29.844+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:05:46.959+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:05:46.960+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:06:16.980+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:06:16.992+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:06:18.122+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:06:18.123+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:06:24.861+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:06:24.871+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:06:38.291+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:06:38.292+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:07:00.554+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:07:00.555+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:07:30.569+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:07:30.570+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:07:31.301+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:07:31.301+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:07:32.457+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:07:32.458+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:07:42.495+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:07:42.496+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:07:55.572+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:07:55.573+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:08:21.708+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:08:21.709+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:08:22.581+05:30  WARN 15464 --- [XNIO-1 task-2] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2023-11-09T17:08:22.588+05:30  INFO 15464 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /, client=127.0.0.1
+2023-11-09T17:08:24.460+05:30  INFO 15464 --- [SpringApplicationShutdownHook] io.undertow                              : stopping server: Undertow - 2.3.6.Final
+2023-11-09T17:08:24.471+05:30  INFO 15464 --- [SpringApplicationShutdownHook] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-09T17:08:24.474+05:30  INFO 15464 --- [SpringApplicationShutdownHook] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2023-11-09T17:08:29.026+05:30  INFO 13092 --- [main] lavalink.server.Launcher                 : Starting Launcher v4.0.0-beta.5 using Java 17.0.9 with PID 13092 (D:\himangshu\Projects\Robo\lava\lava4.jar started by Himangshu Saikia in D:\himangshu\Projects\Robo\lava)
+2023-11-09T17:08:29.037+05:30  INFO 13092 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2023-11-09T17:08:31.658+05:30  INFO 13092 --- [main] l.server.bootstrap.PluginManager         : Downloading https://maven.topi.wtf/releases/com/github/topi314/lavasrc/lavasrc-plugin/3.2.9/lavasrc-plugin-3.2.9.jar
+2023-11-09T17:08:33.524+05:30  WARN 13092 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2023-11-09T17:08:33.544+05:30  INFO 13092 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-11-09T17:08:33.635+05:30 ERROR 13092 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:326) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:314) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) ~[spring-context-6.0.9.jar!/:6.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.9.jar!/:6.0.9]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733) ~[spring-boot-3.1.0.jar!/:3.1.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435) ~[spring-boot-3.1.0.jar!/:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) ~[spring-boot-3.1.0.jar!/:3.1.0]
+	at lavalink.server.Launcher.launchPluginBootstrap(Launcher.kt:133) ~[classes!/:4.0.0-beta.5]
+	at lavalink.server.Launcher.main(Launcher.kt:125) ~[classes!/:4.0.0-beta.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[lava4.jar:4.0.0-beta.5]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[lava4.jar:4.0.0-beta.5]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[lava4.jar:4.0.0-beta.5]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[lava4.jar:4.0.0-beta.5]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:110) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:323) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	... 25 common frames omitted
+Caused by: java.io.FileNotFoundException: https://maven.topi.wtf/releases/com/github/topi314/lavasrc/lavasrc-plugin/3.2.9/lavasrc-plugin-3.2.9.jar
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[na:na]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[na:na]
+	at java.base/java.net.URL.openStream(Unknown Source) ~[na:na]
+	at lavalink.server.bootstrap.PluginManager.downloadJar(PluginManager.kt:83) ~[classes!/:4.0.0-beta.5]
+	at lavalink.server.bootstrap.PluginManager.manageDownloads(PluginManager.kt:77) ~[classes!/:4.0.0-beta.5]
+	at lavalink.server.bootstrap.PluginManager.<init>(PluginManager.kt:26) ~[classes!/:4.0.0-beta.5]
+	at lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0.<init>(<generated>) ~[classes!/:4.0.0-beta.5]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	... 27 common frames omitted
+
+2023-11-09T17:08:48.048+05:30  INFO 13704 --- [main] lavalink.server.Launcher                 : Starting Launcher v4.0.0-beta.5 using Java 17.0.9 with PID 13704 (D:\himangshu\Projects\Robo\lava\lava4.jar started by Himangshu Saikia in D:\himangshu\Projects\Robo\lava)
+2023-11-09T17:08:48.060+05:30  INFO 13704 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2023-11-09T17:08:50.458+05:30  INFO 13704 --- [main] l.server.bootstrap.PluginManager         : Downloading https://maven.topi.wtf/releases/com/github/topi314/lavasrc/lavasrc-plugin/3.2.9/lavasrc-plugin-3.2.9.jar
+2023-11-09T17:08:52.152+05:30  WARN 13704 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2023-11-09T17:08:52.170+05:30  INFO 13704 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-11-09T17:08:52.238+05:30 ERROR 13704 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:326) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:314) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) ~[spring-context-6.0.9.jar!/:6.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.9.jar!/:6.0.9]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733) ~[spring-boot-3.1.0.jar!/:3.1.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435) ~[spring-boot-3.1.0.jar!/:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) ~[spring-boot-3.1.0.jar!/:3.1.0]
+	at lavalink.server.Launcher.launchPluginBootstrap(Launcher.kt:133) ~[classes!/:4.0.0-beta.5]
+	at lavalink.server.Launcher.main(Launcher.kt:125) ~[classes!/:4.0.0-beta.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[lava4.jar:4.0.0-beta.5]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[lava4.jar:4.0.0-beta.5]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[lava4.jar:4.0.0-beta.5]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[lava4.jar:4.0.0-beta.5]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:110) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:323) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	... 25 common frames omitted
+Caused by: java.io.FileNotFoundException: https://maven.topi.wtf/releases/com/github/topi314/lavasrc/lavasrc-plugin/3.2.9/lavasrc-plugin-3.2.9.jar
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[na:na]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[na:na]
+	at java.base/java.net.URL.openStream(Unknown Source) ~[na:na]
+	at lavalink.server.bootstrap.PluginManager.downloadJar(PluginManager.kt:83) ~[classes!/:4.0.0-beta.5]
+	at lavalink.server.bootstrap.PluginManager.manageDownloads(PluginManager.kt:77) ~[classes!/:4.0.0-beta.5]
+	at lavalink.server.bootstrap.PluginManager.<init>(PluginManager.kt:26) ~[classes!/:4.0.0-beta.5]
+	at lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0.<init>(<generated>) ~[classes!/:4.0.0-beta.5]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-6.0.9.jar!/:6.0.9]
+	... 27 common frames omitted
+
