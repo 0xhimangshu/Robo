@@ -1,7 +1,0 @@
-
-
-*.db
-config.py
-*.pyc
-*./__pycache__/
-__pycache__
