@@ -1,11 +1,9 @@
-
-token = "MTExMDYwMzE2MDcyNjI3ODIwNg.G3gCbj.9yC4G3pKVf0RTVlqQtV979VeX0ZLLYZI71kCX0"
-# token = "MTA3MzI3ODgyMTQ5Njc4Mjg1OA.GhFQ3K.3oqqJiFIPvm3sWw4AqdfX9TY9auDYdvMUt5p44"
+token = ""
 prefixes = ["r!", "r.", "r?", "R!", "R.", "R?", "rx!", "rx.", "rx?", "Rx", "RX", "Rx!", "RX!", "Rx.", "RX.", "Rx?", "RX?"]
 
-client_id = 1110603160726278206
-owner_id = 775660503342776341
-owner_ids = [775660503342776341]
+client_id = 0
+owner_id = 0
+owner_ids = []
 
 extensions = [
     "developer",
@@ -20,19 +18,16 @@ color = 0xffe000
 color2 = 0x2f3136
 color_error = 0xff0000
 
-lavalink_password = "horizxon.tech"
-lavalink_port = 80
-lavalink_host = "lava.horizxon.tech"
+lavalink_password = ""
+lavalink_port = 0
+lavalink_host = ""
 
-spotify_client_id = "79dc4bd861934b4cb556317bd95ef541"
-spotify_client_secret = "dc4c10f211564fc5889f8479475824e7"
+spotify_client_id = ""
+spotify_client_secret = ""
 
-support_invite = "https://discord.com/invite/SbvNygKATV"
+support_invite = ""
 
-mongo_uri = "mongodb+srv://himangshu:krpJdrAx5uC02T4h@cluster0.xpw8pqm.mongodb.net/?retryWrites=true&w=majority"
-
-webhook1 = "https://discord.com/api/webhooks/1172827955194503168/HasoSt-mVp2nYEBIsS33tgI9yFZFxD3hGfLEjlXpv-DoefCA-NuG0Z9YL5H-SFnFbUMK"
-webhook2 = "https://discord.com/api/webhooks/1172827948785602640/Po2fER2j4hx7ZeJU-liklSmpH-Fty5EF0BxDTyvxzQt6cvRdmOtLij6XbY4XgqwAIhNf"
+mongo_uri = ""
 
 # Timezone
 import pytz
