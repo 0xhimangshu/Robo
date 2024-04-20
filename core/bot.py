@@ -8,7 +8,7 @@ import aiohttp
 import aiosqlite
 import datetime
 import discord
-from discord.ext import commands
+from discord.ext import commands, tasks
 import sys
 import config
 from utils.context import Context
@@ -55,10 +55,10 @@ class Robo(commands.Bot):
 
     async def setup_hook(self) -> None:
         self.uptime = datetime.datetime.now()
-        self.session = aiohttp.ClientSession()
         self.db = await aiosqlite.connect("data/robo.db")
         for coro_func in on_startup:
             self.loop.create_task(coro_func(self))
+
 
     async def get_prefix(self, message: discord.Message):
         async with self.db.cursor() as cursor:
@@ -85,14 +85,10 @@ class Robo(commands.Bot):
             else:
                 return commands.when_mentioned_or(*config.prefixes, p[1])(self, message)
 
-
     @on_startup.append
     async def load_extensions(self):
-        # await self.load_extension("cogs.robo")
-        # self.logger.info("Loaded cogs.Robo ")
-        
-        for cog in os.listdir("cogs"): 
-            # await self.load_extension(f"cogs.{cog}")
+        # for cog in os.listdir("cogs"): 
+        for cog in config.extensions:
             try:
                 await self.load_extension(f"cogs.{cog}")
             except Exception as e:
@@ -116,7 +112,7 @@ class Robo(commands.Bot):
                     return await ctx.error(f"`{ctx.clean_prefix}{ctx.invoked_with}` is not a valid command.")
             else:
                 if self.MAINTENANCE and message.author.id != self.owner_id:
-                    return await message.channel.send("Bot is in maintenance mode. Please try again later.")
+                    return await message.channel.send(f"[Bot is in maintenance mode. Please try again later.](<{config.support_invite}>)")
                 await self.invoke(ctx)
             try:
                 with open("data/stats.json", "r", encoding="utf-8") as f:
@@ -158,6 +154,15 @@ class Robo(commands.Bot):
             await message.channel.send(embed=embed)
             return
         await self.process_commands(message)
+
+    async def on_message_edit(
+        self, before: discord.Message, after: discord.Message
+    ) -> None:
+        if after.guild is None or after.author.bot:
+            return
+
+        if before.content != after.content and before.author.id in self.config.owner_ids:
+            await self.process_commands(after)
 
     # @on_startup.append
     # async def emojigg(self):

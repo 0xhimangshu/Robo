@@ -1,10 +1,13 @@
-import discord
 import json
+
+import aiohttp
+import discord
 from discord.ext import commands
+from discord.gateway import DiscordWebSocket
+
 from core import Robo
 from utils.buttons import LockView
 from utils.webhook import send_webhook2
-from discord.gateway import DiscordWebSocket
 
 never = """
 #  NNNNNNNN        NNNNNNNNEEEEEEEEEEEEEEEEEEEEEEVVVVVVVV           VVVVVVVVEEEEEEEEEEEEEEEEEEEEEERRRRRRRRRRRRRRRRR   
@@ -137,15 +140,7 @@ class EvnetReady(commands.Cog):
 
         self.bot.add_view(LockView())
 
-        # await send_webhook2(
-        #     f"Logged in as {self.bot.user}"
-        # )
-        # print(never)
-        # print(gonna)
-        # print(give)
-        # print(you)
-        # print(up)
-
+        self.bot.session = aiohttp.ClientSession()
 
         await self.bot.change_presence(
             activity=discord.Activity(

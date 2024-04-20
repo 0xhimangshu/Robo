@@ -6,7 +6,7 @@ import io
 import json
 import os
 import re
-from typing import List, Optional, Sequence, Union, Literal
+from typing import List, Literal, Optional, Sequence, Union
 
 import discord
 import pytz
@@ -612,3 +612,39 @@ class Utility(commands.Cog):
             )
         view=PingRoleSelect(bot=self.bot)
         view.message = await ctx.send(embed=embed, view=view)
+
+    @commands.hybrid_command()
+    @commands.guild_only()
+    async def crypto(self, ctx: Context, channel: Optional[discord.TextChannel]):
+        """
+        Get crypto updates
+        `r.crypto #channel` - Get crypto updates in the channel
+        """
+
+        async with self.bot.db.cursor() as cur:
+            await cur.execute("SELECT * FROM crypto")
+            data = await cur.fetchone()
+
+        if data is None:
+            async with self.bot.db.cursor() as cur:
+                msg = await ctx.send("Please wait...")
+                await cur.execute(
+                    "INSERT INTO crypto (guild_id, channel_id, message_id) VALUES (?, ?, ?)",
+                    (ctx.guild.id, channel.id, msg.id),
+                )
+                await self.bot.db.commit()
+                await msg.edit(content=f"Set crypto updates in {channel.mention}")
+
+        else:
+            async with self.bot.db.cursor() as cur:
+                msg = await ctx.send("Please wait...")
+                await cur.execute(
+                    "UPDATE crypto SET channel_id = ?  WHERE guild_id = ? ",
+                    (channel.id, ctx.guild.id),
+                )
+                await cur.execute(
+                    "UPDATE crypto SET message_id = ? WHERE guild_id = ? ",
+                    (msg.id, ctx.guild.id),
+                )
+                await self.bot.db.commit()
+                await ctx.send(f"Set crypto updates in {channel.mention}")

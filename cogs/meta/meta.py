@@ -34,68 +34,6 @@ class Meta(commands.Cog):
             id=1122432155256094770,
             name="Bot3"
         )
-
-    def count_classes_in_file(self, file_path):
-        with open(file_path, 'r', errors='ignore') as file:
-            tree = ast.parse(file.read())
-            classes = [node for node in ast.walk(tree) if isinstance(node, ast.ClassDef)]
-            return len(classes)
-
-    def count_classes_in_directory(self):
-        total_classes = 0
-
-        for dirpath, _, filenames in os.walk("./"):
-            for filename in filenames:
-                if filename.endswith('.py'):  # Process Python files only
-                    file_path = os.path.join(dirpath, filename)
-                    total_classes += self.count_classes_in_file(file_path)
-
-        return total_classes
-
-    def count_lines_in_file(self, file_path):
-        with open(file_path, 'r', errors='ignore') as file:
-            lines = len(file.readlines())
-            return lines
-
-    def count_lines_in_directory(self):
-        total_lines = 0
-
-        for dirpath, _, filenames in os.walk("./"):
-            for filename in filenames:
-                if filename.endswith('.py'):  # Process Python files only
-                    file_path = os.path.join(dirpath, filename)
-                    total_lines += self.count_lines_in_file(file_path)
-
-        return total_lines
-    
-    def count_functions_in_file(self, file_path):
-        with open(file_path, 'r', encoding='utf-8') as file:
-            content = file.read()
-            try:
-                tree = ast.parse(content)
-            except UnicodeDecodeError:
-                content = content.encode('utf-8', 'ignore').decode('utf-8')
-                tree = ast.parse(content)
-            
-            non_async_functions = len([node for node in ast.walk(tree) if isinstance(node, ast.FunctionDef)])
-            async_functions = len([node for node in ast.walk(tree) if isinstance(node, ast.AsyncFunctionDef)])
-
-            return non_async_functions, async_functions
-
-    def count_functions_in_directory(self):
-        total_non_async_functions = 0
-        total_async_functions = 0
-
-        for dirpath, _, filenames in os.walk("./"):
-            for filename in filenames:
-                if filename.endswith('.py'):
-                    file_path = os.path.join(dirpath, filename)
-                    non_async, async_func = self.count_functions_in_file(file_path)
-                    total_non_async_functions += non_async
-                    total_async_functions += async_func
-                    total_func  = total_non_async_functions + total_async_functions
-
-        return total_non_async_functions, total_async_functions, total_func
     
     async def dblatency(self):
         async with self.bot.db.cursor() as cur:
@@ -174,11 +112,6 @@ class Meta(commands.Cog):
         shard_id = ctx.guild.shard_id
         latency = round(self.bot.latency * 1000)
 
-        lines = self.count_lines_in_directory()
-        classes = self.count_classes_in_directory()
-        functions = self.count_functions_in_directory()[2]
-
-       
         embed = discord.Embed(title=f"{self.bot.user.name}", color=self.bot.color)
         embed.description = (
             f"**Latest Changes**\n"
@@ -195,9 +128,6 @@ class Meta(commands.Cog):
             f"**Latency:** {latency}ms\n"
             f"**DB Latency:** {dblatency}ms\n"
             f"**Memory:** {mem}MB/{tmem}MB\n"
-            f"**Lines of Code:** {lines}\n"
-            f"**Classes:** {classes}\n"
-            f"**Functions:** {functions}\n"
             f"**Commands:** {commands}\n"
             f"**Cogs:** {cogs}\n"
             f"**Python Version:** {pyversion}\n"

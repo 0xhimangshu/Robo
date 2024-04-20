@@ -95,8 +95,7 @@ class ActionReason(commands.Converter):
         if len(ret) > 512:
             reason_max = 512 - len(ret) + len(argument)
             raise commands.BadArgument(f'Reason is too long ({len(argument)}/{reason_max})')
-        return ret
-
+        return re
 
 def can_execute_action(ctx: GuildContext, user: discord.Member, target: discord.Member) -> bool:
     return user.id == ctx.bot.owner_id or user == ctx.guild.owner or user.top_role > target.top_role
@@ -145,9 +144,8 @@ class Mod(commands.Cog):
         `purge search:100 contain:shit` Removes 100 message that contains shit
         `purge bot:yes` - Remove all bot message
         """
-        if not ctx.interaction:
-            await ctx.message.delete()
         predicates: list[Callable[[discord.Message], Any]] = []
+
         if flags.bot:
             if flags.webhooks:
                 predicates.append(lambda m: m.author.bot)
@@ -181,10 +179,10 @@ class Mod(commands.Cog):
         if flags.suffix:
             predicates.append(lambda m: m.content.endswith(flags.suffix))  # type: ignore
 
-        require_prompt = False
-        if not predicates:
-            require_prompt = True
-            predicates.append(lambda m: True)
+        # require_prompt = False
+        # if not predicates:
+        #     require_prompt = True
+        #     predicates.append(lambda m: True)
 
         op = all if flags.require == 'all' else any
 
@@ -194,15 +192,19 @@ class Mod(commands.Cog):
 
         if flags.after:
             if search is None:
-                search = 2000
+                return await ctx.send("Please provide an amount of message to search for", delete_after=10)
+            else:
+                await ctx.message.delete()
 
         if search is None:
-            search = 100
+            return await ctx.send("Please provide an amount of message to search for", delete_after=10)
+        else:
+            await ctx.message.delete()
 
-        if require_prompt:
-            confirm = await ctx.confirm(f'Are you sure you want to delete {plural(search):message}?', timeout=30, author_id=ctx.author.id)
-            if not confirm:
-                return await ctx.send('Aborting.')
+        # if require_prompt:
+        #     confirm = await ctx.confirm(f'Are you sure you want to delete {plural(search):message}?', timeout=30, author_id=ctx.author.id)
+        #     if not confirm:
+        #         return await ctx.send('Aborting.')
             
 
         before = discord.Object(id=flags.before) if flags.before else None
@@ -499,3 +501,4 @@ class Mod(commands.Cog):
     #         ),
     #         delete_after=60
     #     )
+

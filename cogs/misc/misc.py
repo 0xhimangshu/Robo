@@ -794,7 +794,7 @@ class Misc(commands.Cog):
         e.add_field(name='Created', value=format_datetime_human_readable(user.created_at))
         if isinstance(user, discord.Member):
             e.add_field(name='Joined', value=format_datetime_human_readable(user.joined_at))
-            e.add_field(name='Boosting', value=ctx.tick(bool(user.premium_since)))
+            e.add_field(name='Boosting', value=ctx.tick(bool(user.public_flags)))
             e.add_field(name='Status', value=str(user.status).title())
             if user.activity is not None:
                 e.add_field(name='Activity', value=str(user.activity.name))
@@ -1449,8 +1449,7 @@ class Misc(commands.Cog):
         try:
             await ctx.channel.delete_messages(messages)
         except:
-            pass  # oh well
-
+            pass 
         answer = '\n'.join(f'{keycap}: {content}' for keycap, content in answers)
         actual_poll = await ctx.send(f'{ctx.author} asks: {question}\n\n{answer}')
         for emoji, _ in answers:
@@ -1461,100 +1460,4 @@ class Misc(commands.Cog):
         if isinstance(error, commands.MissingRequiredArgument):
             return await ctx.send('Missing the question.')
         
-    # @commands.hybrid_group()
-    # async def sticky(self, ctx: Context):
-    #     """
-    #     Sticky messages. do `r.help sticky` for more information.
-    #     """
-    #     await ctx.send_help(ctx.command)
 
-    # @sticky.command(name="set")
-    # @app_commands.describe(channel="The channel for sending sticky message" ,message="The message")
-    # async def sticky_set(self, ctx: Context, channel:Optional[discord.TextChannel], *, message: str):
-    #     """
-    #     Set a sticky message.
-
-    #     `channel` is the channel for sending sticky message
-    #     `message` is the message
-
-    #     example:
-    #     `r.sticky set #general Hello world!`
-    #     """
-    #     if channel is None:
-    #         channel = ctx.channel
-
-    #     async with self.bot.db.cursor() as cur:
-    #         await cur.execute(
-    #             """
-    #             SELECT * FROM sticky WHERE sticky_channel_id = ?
-    #             """,
-    #             (channel.id,)
-    #         )
-    #         if await cur.fetchone():
-    #             return await ctx.reply("That channel already has a sticky message!")
-            
-    #         await cur.execute(
-    #             """
-    #             INSERT INTO sticky (sticky_channel_id, sticky_message) VALUES (?, ?)
-    #             """,
-    #             (
-    #                 channel.id,
-    #                 message
-    #             )
-    #         )
-    #         await self.bot.db.commit()
-    #         await ctx.reply(embed=discord.Embed(description=f"<:plus:1172608535050338434> | **Channel:** {channel.mention} **Message:** {message}", color=self.bot.color))
-
-    # @sticky.command(name="delete", aliases=["del"])
-    # @app_commands.describe(channel="The channel for deleting sticky message")
-    # async def sticky_delete(self, ctx: Context, channel: discord.TextChannel):
-    #     """
-    #     Delete a sticky message.
-
-    #     `channel` is the channel for deleting sticky message
-
-    #     example:
-    #     `r.sticky delete #general`
-    #     """
-    #     if ctx.interaction:
-    #         await ctx.interaction.response.defer()
-
-    #     async with self.bot.db.cursor() as cur:
-    #         await cur.execute(
-    #             """
-    #             SELECT * FROM sticky WHERE sticky_channel_id = ?
-    #             """,
-    #             (channel.id,)
-    #         )
-    #         if not await cur.fetchone():
-    #             return await ctx.reply("That channel doesn't have a sticky message!")
-            
-    #         await cur.execute(
-    #             """
-    #             DELETE FROM sticky WHERE sticky_channel_id = ?
-    #             """,
-    #             (channel.id,)
-    #         )
-    #         await self.bot.db.commit()
-    #         await ctx.reply(embed=discord.Embed(description=f"<:trash:1172606399595937913> | **Channel:** {channel.mention}", color=self.bot.color))
-
-    # @commands.Cog.listener("on_message")
-    # async def sticky_message(self, message: discord.Message):
-    #     async with self.bot.db.cursor() as cur:
-    #         await cur.execute(
-    #             """
-    #             SELECT * FROM sticky WHERE sticky_channel_id = ?
-    #             """,
-    #             (message.channel.id,)
-    #         )
-    #         if message.author.bot:
-    #             return
-    #         data = await cur.fetchone()
-
-    #         if not data:
-    #             return
-            
-    #         if message.channel.id == data[0]:
-    #             await message.channel.send(data[1])
-    #         else:
-    #             return

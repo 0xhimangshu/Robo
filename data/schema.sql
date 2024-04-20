@@ -42,6 +42,14 @@ CREATE TABLE IF NOT EXISTS no_prefix (
 
 -- guild table
 CREATE TABLE IF NOT EXISTS guilds (
-    id INTEGER PRIMARY KEY,
-    prefix TEXT
+    guild_id INTEGER PRIMARY KEY,
+    -- prefix TEXT
+)
+
+-- welcome table
+CREATE TABLE IF NOT EXISTS welcome (
+    guild_id INTEGER PRIMARY KEY,
+    channel_id INTEGER,
+    msg TEXT,
+    img TEXT
 )
