@@ -68,7 +68,7 @@ class Meta(commands.Cog):
 
     async def get_latest_change(self):
         async with aiohttp.ClientSession(headers=self.bot.config.github_headers) as session:
-            async with session.get(f"https://api.github.com/repos/himangshu147-git/Robo/commits?per_page=3") as r:
+            async with session.get(f"https://api.github.com/repos/0xhimangshu/Robo/commits?per_page=3") as r:
                 data = await r.json()
                 c = []
                 for i in range(3):
@@ -79,7 +79,31 @@ class Meta(commands.Cog):
         commits = await self.get_latest_change()
         xx = ""
         for commit in commits:
-            xx += f"[{truncate_string(commit[0], max_length=6, suffix='')}]({commit[4]}) - `{commit[1]}` by [{commit[2]}](https://github.com/{commit[2]}) <t:{round(datetime.fromisoformat(commit[3]).astimezone(self.bot.config.ist).timestamp())}:R>\n"
+            try:
+                commit_date = datetime.fromisoformat(commit[3])
+            except ValueError as e:
+                print(f"Error parsing date {commit[3]}: {e}")
+                continue
+
+            try:
+                # Convert to IST timezone
+                commit_date_ist = commit_date.astimezone(self.bot.config.ist)
+            except Exception as e:
+                print(f"Error converting timezone: {e}")
+                continue
+
+            try:
+                # Convert datetime to timestamp and round it
+                timestamp = round(commit_date_ist.timestamp())
+            except Exception as e:
+                print(f"Error converting datetime to timestamp: {e}")
+                continue
+
+            xx += (
+                f"[{truncate_string(commit[0], max_length=6, suffix='')}]({commit[4]}) "
+                f"- `{commit[1]}` by [{commit[2]}](https://github.com/{commit[2]}) "
+                f"<t:{timestamp}:R>\n"
+            )
 
         return xx
 
